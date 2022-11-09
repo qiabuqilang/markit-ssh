@@ -14,7 +14,7 @@
     <import resource="spring-redis.xml"/>
     <import resource="spring-jms.xml"/>
 
-    <context:component-scan base-package="tech.markit.ssm.*"/>
+    <context:component-scan base-package="tech.markit.ssm"/>
 
     <!--1、配置数据库相关参数-->
     <context:property-placeholder location="classpath:jdbc.properties" ignore-unresolvable="true"/>
@@ -33,7 +33,7 @@
         <!--注入数据库连接池-->
         <property name="dataSource" ref="dataSource"/>
         <!--扫描sql配置文件:mapper需要的xml文件-->
-<!--        <property name="mapperLocations" value="classpath:mapper/*.xml"/>-->
+        <property name="mapperLocations" value="classpath:mappers/*.xml"/>
         <!-- mybatis配置文件的位置 -->
         <property name="configLocation" value="classpath:mybatis-config.xml"></property>
         <!-- 配置分页插件 -->
@@ -73,14 +73,11 @@
 
 <!--    配置静态资源路径-->
     <mvc:annotation-driven />
-    <mvc:resources mapping="/template/vendors/mdi/css/vendors/mdi/fonts/**" location="/template/vendors/mdi/fonts/" />
-    <mvc:resources mapping="/template/css/fonts/**" location="/template/fonts/" />
-    <mvc:resources mapping = "/template/**" location = "/template/" />
-    <mvc:resources mapping="/js/**" location="/template/js/" />
-    <mvc:resources mapping="/images/**" location="/template/images/" />
-    <mvc:resources mapping="/css/fonts/**" location="/template/css/" />
-    <mvc:resources mapping="/css/**" location="/template/css/" />
-    <mvc:resources mapping="/fonts/**" location="/template/fonts/" />
-    <mvc:resources mapping="/vendors/mdi/css/vendors/mdi/fonts/**" location="/template/vendors/mdi/fonts/" />
-    <mvc:resources mapping="/vendors/**" location="/template/vendors/" />
+    <mvc:resources mapping="/template/plugins/**" location="/template/plugins/" />
+    <mvc:resources mapping="/template/dist/**" location="/template/dist/" />
+    <mvc:resources mapping="/plugins/**" location="/template/plugins/" />
+    <mvc:resources mapping="/dist/**" location="/template/dist/" />
+    <mvc:resources mapping="/template/**" location="/template/" />
+
+
 </beans>

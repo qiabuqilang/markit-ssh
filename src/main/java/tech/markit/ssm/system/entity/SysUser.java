@@ -61,7 +61,7 @@ public class SysUser implements Serializable {
     /**
      * 性别;0-男，1-女;
      */
-    private Boolean gender;
+    private Integer gender;
 
     /**
      * 邮箱
@@ -218,14 +218,14 @@ public class SysUser implements Serializable {
     /**
      * 性别;0-男，1-女;
      */
-    public Boolean getGender() {
+    public Integer getGender() {
         return gender;
     }
 
     /**
      * 性别;0-男，1-女;
      */
-    public void setGender(Boolean gender) {
+    public void setGender(Integer gender) {
         this.gender = gender;
     }
 

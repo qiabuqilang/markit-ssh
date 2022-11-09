@@ -9,23 +9,37 @@
 
 <!-- plugins:js -->
 <%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="utf-8" %>
-<script src="/vendors/base/vendor.bundle.base.js"></script>
-<!-- endinject -->
-<!-- Plugin js for this page-->
-<script src="/vendors/chart.js/Chart.min.js"></script>
-<script src="/vendors/datatables.net/jquery.dataTables.js"></script>
-<script src="/vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
-<!-- End plugin js for this page-->
-<!-- inject:js -->
-<script src="/js/off-canvas.js"></script>
-<script src="/js/hoverable-collapse.js"></script>
-<script src="/js/template.js"></script>
-<!-- endinject -->
-<!-- Custom js for this page-->
-<script src="/js/dashboard.js"></script>
-<script src="/js/data-table.js"></script>
-<script src="/js/jquery.dataTables.js"></script>
-<script src="/js/dataTables.bootstrap4.js"></script>
-<!-- End custom js for this page-->
-
-<script src="/js/jquery.cookie.js" type="text/javascript"></script>
+<!-- jQuery -->
+<script src="/plugins/jquery/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="/plugins/jquery-ui/jquery-ui.min.js"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+    $.widget.bridge('uibutton', $.ui.button)
+</script>
+<!-- Bootstrap 4 -->
+<script src="/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- ChartJS -->
+<script src="/plugins/chart.js/Chart.min.js"></script>
+<!-- Sparkline -->
+<script src="/plugins/sparklines/sparkline.js"></script>
+<!-- JQVMap -->
+<script src="/plugins/jqvmap/jquery.vmap.min.js"></script>
+<script src="/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+<!-- jQuery Knob Chart -->
+<script src="/plugins/jquery-knob/jquery.knob.min.js"></script>
+<!-- daterangepicker -->
+<script src="/plugins/moment/moment.min.js"></script>
+<script src="/plugins/daterangepicker/daterangepicker.js"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<!-- Summernote -->
+<script src="/plugins/summernote/summernote-bs4.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="/dist/js/adminlte.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="/dist/js/demo.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="/dist/js/pages/dashboard.js"></script>
